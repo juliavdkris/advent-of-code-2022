@@ -2,8 +2,10 @@ mod util;
 
 type Day = (u8, fn(Vec<String>) -> i32);
 const DAYS: &[Day] = &[
-	(1, day01::solve)
+	(1, day01::solve_1),
+	(1, day01::solve_2)
 ];
+
 
 fn main() {
 	for day in DAYS {
