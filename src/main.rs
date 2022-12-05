@@ -1,3 +1,13 @@
+mod util;
+
+type Day = (u8, fn(Vec<String>) -> i32);
+const DAYS: &[Day] = &[
+	(1, day01::solve)
+];
+
 fn main() {
-	println!("Hello, world!");
+	for day in DAYS {
+		let solution = day.1(util::read_lines(day.0));
+		println!("Day {day}: {solution}", day=day.0);
+	}
 }
