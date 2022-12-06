@@ -6,7 +6,8 @@ const DAYS: &[Day] = &[
 	(1, day01::solve_2),
 	(2, day02::solve_1),
 	(2, day02::solve_2),
-	(3, day03::solve)
+	(3, day03::solve_1),
+	(3, day03::solve_2)
 ];
 
 

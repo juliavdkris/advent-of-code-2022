@@ -29,6 +29,7 @@ pub fn read_lines(day: u8) -> Vec<String> {
 /// ```
 /// let lines = helper::read_lines_int(1);
 /// ```
+#[allow(dead_code)]
 pub fn read_lines_int(day: u8) -> Vec<i64> {
 	let lines = read_lines(day);
 
